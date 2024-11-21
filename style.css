@@ -1,0 +1,29 @@
+body {
+    font-family: "Maison Neue Demi";
+    background-color: #111820;
+}
+
+nav {
+    display: flex;
+    position: relative;
+    justify-content: space-between;
+    align-items: center;
+    /* width: 100%; */
+    padding: 10px 40px;
+}
+
+.logo {
+    width: 112px;
+    height: 32px;
+}
+
+.navbar-list {
+    gap: 40px;
+}
+
+a[href] {
+    text-decoration: none;
+    color: white;
+    font-weight: lighter;
+    font-size: 1.25rem;
+}
