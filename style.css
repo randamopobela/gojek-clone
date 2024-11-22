@@ -1,15 +1,25 @@
+* {
+    box-sizing: border-box;
+}
 body {
+    margin: 0;
     font-family: "Maison Neue Demi";
-    background-color: #111820;
+    background-color: white;
+    overflow-x: hidden;
+    padding-top: 100px;
 }
 
 nav {
+    background-color: #111820;
     display: flex;
-    position: relative;
+    position: fixed;
+    top: 0;
+    width: 100%;
     justify-content: space-between;
     align-items: center;
-    /* width: 100%; */
-    padding: 10px 40px;
+    /* white-space: nowrap; */
+    padding: 33px 40px;
+    z-index: 10;
 }
 
 .logo {
@@ -17,13 +27,60 @@ nav {
     height: 32px;
 }
 
-.navbar-list {
+.nav-list {
+    display: flex;
     gap: 40px;
 }
 
-a[href] {
+a.nav-item {
     text-decoration: none;
     color: white;
     font-weight: lighter;
-    font-size: 1.25rem;
+    font-size: 18px;
+    padding: 4px 0 6px 0;
+}
+
+.nav-item {
+    display: flex;
+    gap: 40px;
+}
+
+.hero {
+    display: flex;
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+}
+
+section .hero img {
+    /* display: flex; */
+    width: 100%;
+    height: 100%;
+    position: relative;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+}
+
+.hero-content {
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 60px 0;
+    max-width: 80%;
+    height: 100%;
+    z-index: 1;
+}
+
+section div h1 {
+    color: white;
+    font-size: 48px;
 }
